@@ -20,44 +20,46 @@ class SearchBar extends Component {
 
     return (
       <div>
-        <div className="row">
-          <div className="col-sm-2"></div>
-          <div className="col-sm-8">
-            <h1 align="center">Welcome to Shoppies</h1>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="search any movie"
-              ref={this.inputRef}
-              onKeyUp={this.setKeywor}
-            />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-2"></div>
+            <div className="col-sm-8">
+              <h1 align="center">Welcome to Shoppies</h1>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="search any movie"
+                ref={this.inputRef}
+                onKeyUp={this.setKeywor}
+              />
+            </div>
+            <div className="col-sm-2"></div>
           </div>
-          <div className="col-sm-2"></div>
-        </div>
-        <br />
-        <div className="row">
-          <div className="col-sm-2"></div>
-          <div className="col-sm-4 searchresults">
-            <Search
-              keyword={this.state.keywor}
-              k2={this.addNomination}
-              k4={this.state.removed}
-            />
-          </div>
+          <br />
+          <div className="row">
+            <div className="col-sm-2"></div>
+            <div className="col-sm-4 searchresults">
+              <Search
+                keyword={this.state.keywor}
+                k2={this.addNomination}
+                k4={this.state.removed}
+              />
+            </div>
 
-          <div className="col-sm-4 nominations">
-            {" "}
-            <Nominations
-              nominees={this.state.nominees}
-              k3={this.deleteNomination}
-            />
+            <div className="col-sm-4 nominations">
+              {" "}
+              <Nominations
+                nominees={this.state.nominees}
+                k3={this.deleteNomination}
+              />
+            </div>
+            <div className="col-sm-2"></div>
           </div>
-          <div className="col-sm-2"></div>
-        </div>
-        <div className="footer">
-          <a href="https://www.linkedin.com/in/yug-rawal/" target="_blank">
-            Linked In:Yug Rawal
-          </a>
+          <div className="footer">
+            <a href="https://www.linkedin.com/in/yug-rawal/" target="_blank">
+              Linked In:Yug Rawal
+            </a>
+          </div>
         </div>
       </div>
     );
