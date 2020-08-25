@@ -13,7 +13,7 @@ class Search extends Component {
     if (this.state.statekeyword == this.props.keyword) {
     } else {
       fetch(
-        "http://www.omdbapi.com/?s=" +
+        "https://www.omdbapi.com/?s=" +
           this.props.keyword +
           "&type=movie&apikey=ec3ae572"
       )
