@@ -30,6 +30,8 @@ class Nominations extends Component {
               >
                 Delete
               </button>
+              <br />
+              <br />
             </li>
           ))}
         </ul>

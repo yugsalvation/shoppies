@@ -51,7 +51,9 @@ class Search extends Component {
   }
   addNomination = (nomination, e) => {
     if (this.state.nominees.length > 4) {
-      alert("5 done");
+      alert(
+        "5 nominations done, remove any movie if you want to nominate an other one "
+      );
       this.props.k2("undefined");
     } else {
       this.setState({ nominees: [...this.state.nominees, nomination] }, () =>
