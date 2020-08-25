@@ -54,7 +54,7 @@ class Search extends Component {
       alert(
         "5 nominations done, remove any movie if you want to nominate an other one "
       );
-      this.props.k2("undefined");
+      // this.props.k2("undefined");
     } else {
       this.setState({ nominees: [...this.state.nominees, nomination] }, () =>
         console.log("in search" + this.state.nominees)
@@ -80,7 +80,7 @@ class Search extends Component {
       return (
         <div>
           <div className="row">
-            <h3>results for {this.props.keyword}</h3>
+            <h3>Results for {this.props.keyword}</h3>
             <ul>
               {itemss.map((tag) => (
                 <li key={tag.imdbID + "He"}>

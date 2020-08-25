@@ -83,12 +83,6 @@ class SearchBar extends Component {
       );
     }
   };
-  addNomination2 = (nomination) => {
-    if (this.state.nominees.length > 5) {
-    } else {
-      this.setState({ nominees: nomination });
-    }
-  };
 }
 
 export default SearchBar;
